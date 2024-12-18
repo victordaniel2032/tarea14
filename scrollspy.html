@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollspy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col border col-sm-12 col-lg-6">
+                <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                    <a class="navbar-brand" href="#">Mi Menu</a>
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">Primero</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Segundo</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#scrollspyHeading3">Tercero</a></li>
+                          <li><a class="dropdown-item" href="#scrollspyHeading4">Cuarto</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#scrollspyHeading5">Quinto</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                    <h4 id="scrollspyHeading1">Primer encabezado</h4>
+                    <p>Este es un contenido de marcador de posición para la página de Scrollspy. Tenga en cuenta que a medida que se desplaza hacia abajo en la página, se resalta el enlace de navegación correspondiente. Se repite en todo el ejemplo del componente. Seguimos agregando más texto de ejemplo aquí para enfatizar el desplazamiento y el resaltado.</p>
+                    <h4 id="scrollspyHeading2">Segundo Encabezado</h4>
+                    <p>Este es un contenido de marcador de posición para la página de Scrollspy. Tenga en cuenta que a medida que se desplaza hacia abajo en la página, se resalta el enlace de navegación correspondiente. Se repite en todo el ejemplo del componente. Seguimos agregando más texto de ejemplo aquí para enfatizar el desplazamiento y el resaltado.</p>
+                    <h4 id="scrollspyHeading3">Tercer Encabezado</h4>
+                    <p>Este es un contenido de marcador de posición para la página de Scrollspy. Tenga en cuenta que a medida que se desplaza hacia abajo en la página, se resalta el enlace de navegación correspondiente. Se repite en todo el ejemplo del componente. Seguimos agregando más texto de ejemplo aquí para enfatizar el desplazamiento y el resaltado.</p>
+                    <h4 id="scrollspyHeading4">Cuarto encabezado</h4>
+                    <p>Este es un contenido de marcador de posición para la página de Scrollspy. Tenga en cuenta que a medida que se desplaza hacia abajo en la página, se resalta el enlace de navegación correspondiente. Se repite en todo el ejemplo del componente. Seguimos agregando más texto de ejemplo aquí para enfatizar el desplazamiento y el resaltado.</p>
+                    <h4 id="scrollspyHeading5">Quinto Encabezado</h4>
+                    <p>Este es un contenido de marcador de posición para la página de Scrollspy. Tenga en cuenta que a medida que se desplaza hacia abajo en la página, se resalta el enlace de navegación correspondiente. Se repite en todo el ejemplo del componente. Seguimos agregando más texto de ejemplo aquí para enfatizar el desplazamiento y el resaltado.</p>
+                  </div>
+            </div>
+            <div class="col border col-sm-12 col-lg-6">
+                <div class="row">
+                    <div class="col-4">
+                      <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
+                        <a class="p-1 rounded" href="#simple-list-item-1">articulo 1</a>
+                        <a class="p-1 rounded" href="#simple-list-item-2">articulo 2</a>
+                        <a class="p-1 rounded" href="#simple-list-item-3">articulo 3</a>
+                        <a class="p-1 rounded" href="#simple-list-item-4">articulo 4</a>
+                        <a class="p-1 rounded" href="#simple-list-item-5">articulo 5</a>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                        <h4 id="simple-list-item-1">Articulo 1</h4>
+                        <p>Este es un contenido de marcador de posición para la página de Scrollspy. Tenga en cuenta que a medida que se desplaza hacia abajo en la página, se resalta el enlace de navegación correspondiente. Se repite en todo el ejemplo del componente. Seguimos agregando más texto de ejemplo aquí para enfatizar el desplazamiento y el resaltado.</p>
+                        <h4 id="simple-list-item-2">Articulo 2</h4>
+                        <p>Este es un contenido de marcador de posición para la página de Scrollspy. Tenga en cuenta que a medida que se desplaza hacia abajo en la página, se resalta el enlace de navegación correspondiente. Se repite en todo el ejemplo del componente. Seguimos agregando más texto de ejemplo aquí para enfatizar el desplazamiento y el resaltado.</p>
+                        <h4 id="simple-list-item-3">Articulo 3</h4>
+                        <p>Este es un contenido de marcador de posición para la página de Scrollspy. Tenga en cuenta que a medida que se desplaza hacia abajo en la página, se resalta el enlace de navegación correspondiente. Se repite en todo el ejemplo del componente. Seguimos agregando más texto de ejemplo aquí para enfatizar el desplazamiento y el resaltado.</p>
+                        <h4 id="simple-list-item-4">Articulo 4</h4>
+                        <p>Este es un contenido de marcador de posición para la página de Scrollspy. Tenga en cuenta que a medida que se desplaza hacia abajo en la página, se resalta el enlace de navegación correspondiente. Se repite en todo el ejemplo del componente. Seguimos agregando más texto de ejemplo aquí para enfatizar el desplazamiento y el resaltado.</p>
+                        <h4 id="simple-list-item-5">Articulo 5</h4>
+                        <p>Este es un contenido de marcador de posición para la página de Scrollspy. Tenga en cuenta que a medida que se desplaza hacia abajo en la página, se resalta el enlace de navegación correspondiente. Se repite en todo el ejemplo del componente. Seguimos agregando más texto de ejemplo aquí para enfatizar el desplazamiento y el resaltado.</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

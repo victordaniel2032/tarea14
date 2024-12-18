@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltips en bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        button{
+            margin-left: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid my-5">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip hacia arriba">
+                    Tooltip arriba
+                  </button>
+                  <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip a la derecha">
+                    Tooltip derecha
+                  </button>
+                  <button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip hacia abajo">
+                    Tooltip abajo
+                  </button>
+                  <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip a la izquierda">
+                    Tooltip izquierda
+                  </button>
+                  <script>
+                    //inicializacion de los tooltips
+                    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+                    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+                  </script>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
